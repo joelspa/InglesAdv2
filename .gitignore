@@ -1,0 +1,10 @@
+node_modules/
+dist/
+tmp/
+*.zip
+.vercel/
+test-results/
+playwright-report/
+.env*
+*.pdf
+.claude/

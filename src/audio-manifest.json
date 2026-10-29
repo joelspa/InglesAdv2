@@ -1,0 +1,256 @@
+{
+  "conditional-10": {
+    "src": "/audio/conditional-10.mp3",
+    "seconds": 10.08,
+    "bytes": 121536,
+    "checksum": "41263b2cb97687f8ea2ad8a80570f1b8cac3ce7eedbb0a3ec459e6be252fd0f5",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "conditional-9": {
+    "src": "/audio/conditional-9.mp3",
+    "seconds": 48.59,
+    "bytes": 583776,
+    "checksum": "3d553893d4bd038881ac1a008065b275b204b428570daa9e5263c7feb8538ca2",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "conditional-22": {
+    "src": "/audio/conditional-22.mp3",
+    "seconds": 7.81,
+    "bytes": 94464,
+    "checksum": "fc9463cf60bb463bb78ccb6fdd5dfc9edf430b79bb40a90f9fd78c5a2fadd2fd",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "intensifiers-10": {
+    "src": "/audio/intensifiers-10.mp3",
+    "seconds": 7.61,
+    "bytes": 91872,
+    "checksum": "6734d0c4f46097040127ba892a406f34953c4a31f1484d2ae541b67c7e51d6db",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "intensifiers-22": {
+    "src": "/audio/intensifiers-22.mp3",
+    "seconds": 7.93,
+    "bytes": 95904,
+    "checksum": "d6bcbb00e4ff29f60f966fea9de6475670a14896a72f784de07dd807a5b26246",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "passive-9": {
+    "src": "/audio/passive-9.mp3",
+    "seconds": 27.56,
+    "bytes": 331488,
+    "checksum": "21c7271d240d9674cae7eb06d5f5f95f3c37a0801e172dc903ad2671e22a023d",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "passive-10": {
+    "src": "/audio/passive-10.mp3",
+    "seconds": 11.13,
+    "bytes": 134208,
+    "checksum": "1a674a4c340bbd8f848a62859f7ae6e1e401e596d4014195cd80a0428fb7d2c4",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "passive-22": {
+    "src": "/audio/passive-22.mp3",
+    "seconds": 7.98,
+    "bytes": 96480,
+    "checksum": "1e4301ca90449320143f68d6a1809d4a627171afe82bcb6e5709a46d248bbb20",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "past-perfect-9": {
+    "src": "/audio/past-perfect-9.mp3",
+    "seconds": 61.3,
+    "bytes": 736128,
+    "checksum": "156e925c980b698b07047c0d123e39a3747443864d5a809bae5070383def97cb",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "past-perfect-10": {
+    "src": "/audio/past-perfect-10.mp3",
+    "seconds": 12.46,
+    "bytes": 150048,
+    "checksum": "749bfd4027358f9c530b1e8046a2b78d7afac32e21147df740c802700ac20c83",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "past-perfect-22": {
+    "src": "/audio/past-perfect-22.mp3",
+    "seconds": 7.66,
+    "bytes": 92448,
+    "checksum": "72639909d2085e3290d77a6a61e67f1b3f0e97aef1bb73df7c834aa3758d71ea",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "used-to-9": {
+    "src": "/audio/used-to-9.mp3",
+    "seconds": 61.95,
+    "bytes": 744192,
+    "checksum": "c73fa07f0878cd6e714395d0bd6176fb09053390deb1a55dd3075bfb91d4fea3",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "used-to-10": {
+    "src": "/audio/used-to-10.mp3",
+    "seconds": 13.08,
+    "bytes": 157536,
+    "checksum": "53d296467dff4ff4cab02ecaae1767def78fe6df116f56781d017d24bad52e03",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "used-to-22": {
+    "src": "/audio/used-to-22.mp3",
+    "seconds": 8.31,
+    "bytes": 100512,
+    "checksum": "053217b84de2a98c75f844a23bb3bdb658f037a7fdad4cdbfa74c2eef640c31f",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "phrasal-10": {
+    "src": "/audio/phrasal-10.mp3",
+    "seconds": 7.23,
+    "bytes": 87552,
+    "checksum": "2461f769e2dcd526e5e9e29d84982394c9978959d3c432acea16652f5219519f",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "phrasal-22": {
+    "src": "/audio/phrasal-22.mp3",
+    "seconds": 7.06,
+    "bytes": 85248,
+    "checksum": "f1b527d869e191c0451e55f112da6f66b87dc84d0555ea16f463613290fde38d",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "reported-9": {
+    "src": "/audio/reported-9.mp3",
+    "seconds": 56.42,
+    "bytes": 677664,
+    "checksum": "1cc642da176ee9649c3e40ed4ddf586e0939c3172ee4c65746ae913be262ceb2",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "reported-10": {
+    "src": "/audio/reported-10.mp3",
+    "seconds": 13.53,
+    "bytes": 163008,
+    "checksum": "ca69f55e1fb97fd170308b14897cb59da008883cd9b211795a93da4c060a853a",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "reported-22": {
+    "src": "/audio/reported-22.mp3",
+    "seconds": 7.08,
+    "bytes": 85536,
+    "checksum": "e74dcc4ac01f6702cd07106e4b5cb31754cf0e3a61772ebd6545dd03badbcd60",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "tags-9": {
+    "src": "/audio/tags-9.mp3",
+    "seconds": 64.08,
+    "bytes": 769536,
+    "checksum": "230608bd803ccb3aa4e6e0995ca2d4a876b2a3c2de98713af47ba458c476ce27",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "tags-10": {
+    "src": "/audio/tags-10.mp3",
+    "seconds": 12.43,
+    "bytes": 149760,
+    "checksum": "3d3522e3c03ea0cca85e018b4ad37bed7fcd941524305009eceb92bd80735248",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "tags-22": {
+    "src": "/audio/tags-22.mp3",
+    "seconds": 6.11,
+    "bytes": 74016,
+    "checksum": "50c9090e1443307dc2f9840862297cdb0c4d2e8f4baec8bdbc867d487d7991b3",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "agreement-9": {
+    "src": "/audio/agreement-9.mp3",
+    "seconds": 51.12,
+    "bytes": 614016,
+    "checksum": "5c5111080f88975239df478eb84e7ad4bf53018c6a02fd3d6fc3aac12d0ec1a1",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "agreement-10": {
+    "src": "/audio/agreement-10.mp3",
+    "seconds": 11.87,
+    "bytes": 143136,
+    "checksum": "516ef4536273f421f6309cb14e841175a527ed76b4214e9e6b4739c267eb1590",
+    "voices": [
+      "af_heart",
+      "am_puck"
+    ]
+  },
+  "agreement-22": {
+    "src": "/audio/agreement-22.mp3",
+    "seconds": 8.35,
+    "bytes": 100800,
+    "checksum": "da00ca011a0c072f87b70e39dfe3331b4175c5aaf13df8d898923b870f35a036",
+    "voices": [
+      "af_heart",
+      "am_puck"
+    ]
+  },
+  "conditional-31": {
+    "src": "/audio/conditional-31.mp3",
+    "seconds": 13.16,
+    "bytes": 158688,
+    "checksum": "9b526b47f91a35d55a9a66e202bef919cb3da085a3737e4b635b7f1feb6af79a",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "intensifiers-32": {
+    "src": "/audio/intensifiers-32.mp3",
+    "seconds": 15.23,
+    "bytes": 183456,
+    "checksum": "ce595c21164c8e0a48348977f4d4f01e0de0d9f3b96abc7d689d6ed66ddbbe6f",
+    "voices": [
+      "af_heart"
+    ]
+  },
+  "passive-32": {
+    "src": "/audio/passive-32.mp3",
+    "seconds": 15.08,
+    "bytes": 181728,
+    "checksum": "7ed1e8f12b4439cf1e81ae80389456f1ac5107e7b4e2c8a5c66778db649a35bd",
+    "voices": [
+      "af_heart"
+    ]
+  }
+}

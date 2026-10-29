@@ -1,0 +1,11 @@
+node_modules
+dist
+tmp
+tests
+test-results
+playwright-report
+scripts
+.claude
+*.pdf
+*.zip
+.env*

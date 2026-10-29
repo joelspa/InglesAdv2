@@ -1,0 +1,122 @@
+// Unit 1 study guide (Escuela de Gastronomía y Turismo): self-assessment items and
+// theory examples in restaurant, hotel and kitchen contexts. Played in the "Guía EGT" node.
+const bi = (es, en) => ({ es, en });
+const guide = item => ({ ...item, lesson: 'guide' });
+const c = (prompt, answer, wrong, es, en) => guide({ type: 'choice', prompt, answer, options: [answer, ...wrong], explanation: bi(es, en) });
+const f = (prompt, answer, es, en, accept = []) => guide({ type: 'fill', prompt, answer, accept, explanation: bi(es, en) });
+const o = (answer, esPrompt, enPrompt, es, en) => guide({ type: 'order', prompt: bi(esPrompt, enPrompt), answer, words: answer.split(' '), explanation: bi(es, en) });
+const e = (sentence, answer, wrong, es, en) => ({ ...c(bi('Corrige la parte que contiene el error.', 'Correct the part containing the error.'), answer, wrong, es, en), type: 'error_hunt', sentence });
+const tr = (sourceSentence, prompt, answer, wrong, es, en) => ({ ...c(prompt, answer, wrong, es, en), type: 'transform', sourceSentence });
+const m = (prompt, pairs, es, en) => guide({ type: 'match', prompt, pairs, answer: JSON.stringify(pairs), explanation: bi(es, en) });
+const d = (sceneEs, sceneEn, speaker, line, answer, wrong, es, en) => ({ ...c(bi('¿Qué dirías tú? Elige la respuesta adecuada.', 'What would you say? Choose the appropriate reply.'), answer, wrong, es, en), type: 'dialogue', scene: bi(sceneEs, sceneEn), speaker, line });
+const l = (audio, esPrompt, enPrompt, answer, wrong, es, en) => ({ ...c(bi(esPrompt, enPrompt), answer, wrong, es, en), type: 'listen', audio });
+const toPassive = bi('Pásala a voz pasiva conservando el tiempo verbal.', 'Change it to the passive voice and keep the tense.');
+
+export const guideExercises = {
+  conditional: [
+    f("If I ___ (have) a higher budget, I would renovate the restaurant's dining area.", 'had',
+      'La condición imaginaria va en pasado simple: had. El resultado ya usa would + renovate.',
+      'The imaginary condition takes the past simple: had. The result already uses would + renovate.'),
+    c('If the room service ___ slow, guests ___ negative reviews on TripAdvisor.', 'were / would write', ['is / would write', 'were / will write'],
+      'Condición en pasado (were, o was en registro informal) y resultado con would + verbo base: would write.',
+      'Past condition (were, or informal was) and a result with would + base verb: would write.'),
+    c('What ___ the manager do if a client found a foreign object in their food?', 'would', ['will', 'did'],
+      'En la pregunta del segundo condicional va would antes del sujeto: What would the manager do…?',
+      'In a second-conditional question, would comes before the subject: What would the manager do…?'),
+    f("If we ___ (not wash) the kitchen knives, cross-contamination would occur quickly.", "didn't wash",
+      "La negativa de la condición es didn't + verbo base: didn't wash. El resultado lleva would occur.",
+      "The negative condition is didn't + base verb: didn't wash. The result uses would occur.", ['did not wash']),
+    c('If the restaurant ___ larger, we would hire more kitchen staff.', 'were', ['is', 'will be'],
+      'Tip de la guía: en registro formal se usa were con todas las personas, también con it o the restaurant.',
+      'Guide tip: in formal English, use were for every person, including it or the restaurant.'),
+    o('If the chef had fresh truffles he would prepare a special dish', 'Construye: Si el chef tuviera trufas frescas, prepararía un plato especial.', 'Build: the chef and the fresh truffles.',
+      'Primero la condición con had; después el resultado con would prepare.',
+      'First the condition with had, then the result with would prepare.'),
+    e("If the hotel doesn't offer buffet breakfast, guests would complain.", "didn't offer", ["doesn't offer", "won't offer"],
+      "Con would complain, la condición debe ir en pasado: If the hotel didn't offer buffet breakfast…",
+      "With would complain, the condition must be in the past: If the hotel didn't offer buffet breakfast…"),
+    d('Un turista te pide consejo en la recepción del hotel.', 'A tourist asks for advice at the hotel reception.', 'Guest', 'Would you recommend this eco-tour if the weather were bad?',
+      "No, I wouldn't recommend it if it rained.", ["No, I won't recommend it if it rained.", "No, I wouldn't recommended it if it rains."],
+      "Respondes con wouldn't + verbo base (recommend) y mantienes la condición en pasado: if it rained.",
+      "Answer with wouldn't + base verb (recommend) and keep the condition in the past: if it rained."),
+    l('If I were the manager of this restaurant, I would change the menu every season. If we had a bigger kitchen, we would hire two more cooks. And if guests complained about the music, I would turn it down immediately.',
+      '¿Qué harían si tuvieran una cocina más grande?', 'What would they do if they had a bigger kitchen?',
+      'Hire two more cooks.', ['Change the music.', 'Close the restaurant.'],
+      'El gerente dice: "If we had a bigger kitchen, we would hire two more cooks."',
+      'The manager says: "If we had a bigger kitchen, we would hire two more cooks."')
+  ],
+  intensifiers: [
+    c('The lobster bisque we tasted yesterday was ___ delicious.', 'so', ['such', 'such a'],
+      'Delicious es un adjetivo sin sustantivo después: so delicious.',
+      'Delicious is an adjective with no noun after it: so delicious.'),
+    c('The boutique hotel has ___ polite team that everyone feels welcome.', 'such a', ['so', 'such an'],
+      'Team es un sustantivo contable singular y polite empieza con consonante: such a polite team.',
+      'Team is a singular countable noun and polite starts with a consonant: such a polite team.'),
+    c('It was ___ exhausting shift in the kitchen because of the high volume of orders.', 'such an', ['such a', 'so'],
+      'Shift es singular y exhausting empieza con sonido vocálico: such an exhausting shift.',
+      'Shift is singular and exhausting starts with a vowel sound: such an exhausting shift.'),
+    c('They serve ___ fresh seafood that the restaurant is always full.', 'such', ['such a', 'so'],
+      'Seafood es incontable, así que no lleva a: such fresh seafood.',
+      'Seafood is uncountable, so it takes no a: such fresh seafood.'),
+    f('The health inspector was ___ detailed that he checked behind all refrigeration units. (so / such)', 'so',
+      'Detailed es un adjetivo solo: so detailed that…',
+      'Detailed is a standalone adjective: so detailed that…'),
+    m(bi('Une cada expresión con el intensificador correcto.', 'Match each phrase with the correct intensifier.'),
+      { '___ strict inspector': 'such a', '___ elegant restaurant': 'such an', '___ delicious cocktails': 'such', '___ efficiently': 'so' },
+      'Singular: such a/an. Plural o incontable: such. Adjetivo o adverbio solo: so.',
+      'Singular: such a/an. Plural or uncountable: such. Adjective or adverb alone: so.'),
+    e('They use such a high-quality equipment.', 'such high-quality equipment', ['such a high-quality equipment', 'so high-quality equipment'],
+      'Equipment es incontable: no lleva a. Lo correcto es such high-quality equipment.',
+      'Equipment is uncountable, so it takes no a: such high-quality equipment.'),
+    o('It was such a busy night that the kitchen was crowded', 'Construye: Fue una noche tan ocupada que la cocina estaba abarrotada.', 'Build: a very busy night in the kitchen.',
+      'Such a + busy + night (sustantivo singular), seguido de that + consecuencia.',
+      'Such a + busy + night (singular noun), followed by that + result.'),
+    tr('The kitchen staff works very efficiently.', bi('Reescríbela usando so.', 'Rewrite it using so.'), 'The kitchen staff works so efficiently.',
+      ['The kitchen staff works such efficiently.', 'The kitchen staff works such an efficient.'],
+      'Efficiently es un adverbio: so + adverbio.',
+      'Efficiently is an adverb: so + adverb.'),
+    l('Last weekend we stayed at a small hotel by the beach. The rooms were so clean, and the staff was so friendly. The chef used such fresh ingredients that every dinner felt special. It was such a relaxing trip that we already booked again.',
+      '¿Por qué cada cena se sentía especial?', 'Why did every dinner feel special?',
+      'The chef used very fresh ingredients.', ['The rooms were very big.', 'The music was very loud.'],
+      'Escucha: "The chef used such fresh ingredients that every dinner felt special."',
+      'Listen for: "The chef used such fresh ingredients that every dinner felt special."')
+  ],
+  passive: [
+    tr('The chef prepares the signature sauce with organic herbs.', toPassive, 'The signature sauce is prepared with organic herbs by the chef.',
+      ['The signature sauce was prepared with organic herbs by the chef.', 'The signature sauce is prepare with organic herbs by the chef.'],
+      'Prepares está en presente: is + participio (prepared). El chef aporta información, así que se mantiene by the chef.',
+      'Prepares is present: is + past participle (prepared). The chef is relevant, so keep by the chef.'),
+    tr('The hygiene supervisor checked the food temperatures yesterday.', toPassive, 'The food temperatures were checked by the hygiene supervisor yesterday.',
+      ['The food temperatures was checked by the hygiene supervisor yesterday.', 'The food temperatures are checked by the hygiene supervisor yesterday.'],
+      'Temperatures es plural y la acción es pasada: were checked.',
+      'Temperatures is plural and the action is past: were checked.'),
+    tr('They serve regional white wine at room temperature.', toPassive, 'Regional white wine is served at room temperature.',
+      ['Regional white wine was served at room temperature.', 'Regional white wine is serve at room temperature.'],
+      'Serve está en presente: is served. El agente (they) es general, por eso se omite.',
+      'Serve is present: is served. The agent (they) is general, so it is left out.'),
+    f('All suite rooms ___ cleaned by the hotel housekeepers this morning.', 'were',
+      'Rooms es plural y this morning indica pasado: were cleaned.',
+      'Rooms is plural and this morning points to the past: were cleaned.'),
+    c('The kitchen counter ___ by the staff every hour.', 'is cleaned', ['is cleaning', 'was cleaned'],
+      'Every hour es una rutina: presente pasivo con is + cleaned.',
+      'Every hour is a routine: present passive with is + cleaned.'),
+    c('The sourdough bread ___ by the chef yesterday.', 'was baked', ['is baked', 'was bake'],
+      'Yesterday indica pasado y bread es singular: was + baked.',
+      'Yesterday signals the past and bread is singular: was + baked.'),
+    e('Wine is produced in France by people.', 'is produced in France', ['is produced in France by people', 'produces in France'],
+      'Si el agente es obvio o general (people, they, someone), se omite: Wine is produced in France.',
+      'When the agent is obvious or general (people, they, someone), leave it out: Wine is produced in France.'),
+    o('The food temperatures were checked yesterday', 'Construye: Las temperaturas de los alimentos fueron revisadas ayer.', 'Build: food temperatures checked yesterday.',
+      'Sujeto plural + were + participio checked.',
+      'Plural subject + were + past participle checked.'),
+    m(bi('Une cada oración activa con su versión pasiva.', 'Match each active sentence with its passive version.'),
+      { 'The staff cleans the counter.': 'The counter is cleaned.', 'The chef baked the bread.': 'The bread was baked.', 'They serve the wine cold.': 'The wine is served cold.', 'The housekeepers cleaned the rooms.': 'The rooms were cleaned.' },
+      'Presente activo → am/is/are + participio. Pasado activo → was/were + participio.',
+      'Present active → am/is/are + participle. Past active → was/were + participle.'),
+    l('Kitchen hygiene procedure. Every morning, all work surfaces are cleaned and disinfected. The temperatures of the fridges are checked every four hours. Yesterday, the knives were sharpened and the floors were washed by the night team.',
+      '¿Cada cuánto se revisan las temperaturas de los refrigeradores?', 'How often are the fridge temperatures checked?',
+      'Every four hours.', ['Every morning.', 'Once a week.'],
+      'El procedimiento dice: "The temperatures of the fridges are checked every four hours."',
+      'The procedure says: "The temperatures of the fridges are checked every four hours."')
+  ]
+};
